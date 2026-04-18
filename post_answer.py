@@ -320,7 +320,7 @@ def func_postAnswer(filename, number=50):
 			answer_list = getAnswer(course_id, course_recruitId, question_id)
 			try:
 				if len(answer_list) == 0:
-					continue
+				    continue
 				answer = answer_list[random.randint(0, len(answer_list) - 1)]['answerContent']
 				count += 1
 				print(count, '. ', question_id, ' -> ', questionInfo, ' :　', answer, end=' ')
